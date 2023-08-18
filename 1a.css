@@ -1,0 +1,177 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    background-color: #000000; /* Set the desired background color */
+    font-family: Arial, sans-serif;
+    color: #ffffff; /* Set the desired font color */
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #ffffff;
+    color: #0a4a9c;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 500px; /* Adjust the max-width as needed */
+    height: auto;
+}
+
+.college-info h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.college-info p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Existing CSS styles */
+
+/* Dropdown menu styles */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    border: 1px solid #555;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    margin: 0;
+    padding: 0;
+}
+
+.submenu li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.submenu li a:hover {
+    background-color: #555;
+}
+
+/* Existing media query for responsive design */
+
+/* Navigation styles */
+nav ul.menu {
+    list-style: none;
+    display: flex;
+    background-color: #333;
+    margin: 0;
+    padding: 10px;
+}
+
+nav ul.menu li {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul.menu li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+nav ul.menu li a:hover {
+    background-color: #555;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Existing CSS styles */
+
+/* Hover effect for images */
+.imgs {
+    max-width: 100%;
+    height: auto;
+    margin: 10px; /* Equidistant padding around images */
+    padding: 0; /* Remove padding */
+    display: inline-block; /* Display images in the same line */
+    vertical-align: top; /* Align images to the top */
+    border: 2px solid #ddd; /* Add border */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.imgs:hover {
+    transform: scale(1.1); /* Increase the image size on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+}
+/* Existing media query for responsive design */
+
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.social-media a img {
+    width: 24px; /* Adjust the width as needed */
+    height: 24px; /* Adjust the height as needed */
+    margin: 0 5px; /* Add some spacing between icons */
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo img {
+        margin-bottom: 10px;
+    }
+
+    nav ul.menu {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul.menu li {
+        margin: 0;
+        padding: 5px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
